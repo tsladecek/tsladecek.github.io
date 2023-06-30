@@ -20,7 +20,7 @@ export const articles: ArticleMetadata[] = [
     abstract: `Nutrition as the fourth discipline of triathlon is of paramount importance 
     for a successful and enjoyable race.
     This blogpost explains basics of nutrition, how to fuel before, during and after exercise,
-    various fuel sources as well as some famous supplement usage
+    various fuel sources as well as some popular supplement usage
     `,
     publicationLink: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6628334/',
     bannerPhotoLink: '/static/images/nutrition-for-endurance-athletes.jpg'
