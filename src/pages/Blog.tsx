@@ -27,7 +27,7 @@ const Blog = (props: Props) => {
                   component="img"
                   image={a.bannerPhotoLink}
                   alt={a.key}
-                  height="100"
+                  height="150"
                 />
                 <CardContent>
                   <Typography variant="h5">{a.title}</Typography>

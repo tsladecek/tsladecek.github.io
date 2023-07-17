@@ -2,7 +2,15 @@ import React from "react";
 import ArticleBody, {
   ArticleSection,
   ArticleSubSection,
-} from "../../components/ArticleSkeleton";
+} from "../components/ArticleSkeleton";
+import {
+  Paper,
+  Table,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
 
 const NutritionForEnduranceAthletes = () => {
   return (
@@ -77,7 +85,35 @@ const NutritionForEnduranceAthletes = () => {
         </ArticleSubSection>
       </ArticleSection>
       <ArticleSection title="Exercise Fueling Recommendations">
-        <ArticleSubSection title="Before">Before</ArticleSubSection>
+        <ArticleSubSection title="Before">
+          Daily carbohydrate intake based on exercise duration:
+          <TableContainer sx={{ pt: 2 }}>
+            <Table component={Paper}>
+              <TableHead>
+                <TableRow>
+                  <TableCell sx={{ textAlign: "center" }}>
+                    Exercise duration (h/day)
+                  </TableCell>
+                  <TableCell sx={{ textAlign: "center" }}>
+                    Carbohydrate intake (g per kg of bodyweight)
+                  </TableCell>
+                </TableRow>
+              </TableHead>
+              {[
+                { duration: "1", intake: "5-7" },
+                { duration: "1-3", intake: "6-10" },
+                { duration: "4-5", intake: "8-12" },
+              ].map((d) => (
+                <TableRow>
+                  <TableCell sx={{ textAlign: "center" }}>
+                    {d.duration}
+                  </TableCell>
+                  <TableCell sx={{ textAlign: "center" }}>{d.intake}</TableCell>
+                </TableRow>
+              ))}
+            </Table>
+          </TableContainer>
+        </ArticleSubSection>
         <ArticleSubSection title="During">During</ArticleSubSection>
         <ArticleSubSection title="After">After</ArticleSubSection>
       </ArticleSection>

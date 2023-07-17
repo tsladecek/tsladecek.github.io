@@ -1,5 +1,6 @@
-import ImprovingCyclingPerformance from "../blogPosts/improvingCyclingPerformance/ImprovingCyclingPerformance";
-import NutritionForEnduranceAthletes from "../blogPosts/nutritionForEnduranceAthlete/NutritionForEnduranceAthletes";
+import ImprovingCyclingPerformance from "../blogPosts/ImprovingCyclingPerformance";
+import NutritionForEnduranceAthletes from "../blogPosts/NutritionForEnduranceAthletes";
+import Oravaman2023 from "../blogPosts/Oravaman2023";
 
 type ArticleMetadata = {
   key: string;
@@ -12,6 +13,18 @@ type ArticleMetadata = {
 };
 
 export const articles: ArticleMetadata[] = [
+  {
+    key: "oravaman-2023",
+    title: "Oravaman 2023",
+    content: Oravaman2023,
+    date: new Date("2023-07-17"),
+    abstract: `
+    Oravaman is an extreme triathlon event taking place in the beautiful region of Orava in the northern
+    part of Slovakia. Alltogether, an athlete must swim 2km in Liptovská Mara den, then cycle
+    86km with more than 1800m of vertical ascent and finally hike to Brestová mountain (1903 mamsl).
+    `,
+    bannerPhotoLink: '/static/images/oravaman2023/run_with_mountains_cropped.jpg'
+  },
   {
     key: "nutrition-for-endurance-athletes",
     title: "Nutrition for Endurance Athletes",

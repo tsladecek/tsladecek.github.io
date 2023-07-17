@@ -2,12 +2,17 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 
 type BodyProps = {
-  children: string;
+  children: any;
 };
 
 type SectionProps = {
   title: string;
   children: React.ReactNode;
+};
+
+type ImageProps = {
+  src: string;
+  alt: string;
 };
 
 const ArticleBody = (props: BodyProps) => {
@@ -37,5 +42,13 @@ export const ArticleSubSection = (props: SectionProps) => {
       </Typography>
       <Box pl={1}>{props.children}</Box>
     </>
+  );
+};
+
+export const ArticleImg = (props: ImageProps) => {
+  return (
+    <Box pl={1}>
+      <img src={props.src} alt={props.alt}  style={{ width: '100%' }}/>
+    </Box>
   );
 };

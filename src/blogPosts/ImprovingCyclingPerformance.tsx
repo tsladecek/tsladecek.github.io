@@ -1,5 +1,5 @@
 import React from "react";
-import { ArticleSection } from "../../components/ArticleSkeleton";
+import { ArticleSection } from "../components/ArticleSkeleton";
 
 const ImprovingCyclingPerformance = () => {
   return (
